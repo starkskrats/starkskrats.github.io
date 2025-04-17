@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Starks | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, navy, royalblue);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile-pic {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+    }
+
+    p.tagline {
+      font-size: 1.2rem;
+      color: #dcdcdc;
+    }
+
+    .section {
+      max-width: 800px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    a {
+      color: #aadfff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project img {
+      width: 100%;
+      max-height: 1150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="headshot.jpeg" alt="Andrew's Headshot" class="profile-pic" />
+    <h1>Andrew Starks</h1>
+    <p class="tagline">Builder. Leader. Innovator.</p>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+        I'm a tech-savvy general manager and full-stack builder based in Utah, running a high-energy family entertainment center by day and engineering practical software solutions by night. I specialize in solving real business problems with lean, powerful tools—often combining Laravel, low-code platforms, and third-party APIs to streamline operations, save labor, and drive revenue.
+    </p>
+    <p>
+        I graduated <strong>Cum Laude</strong> with a degree in Computer Science from <strong>Weber State University</strong>, and I've led the full development lifecycle on everything from reservation systems to HR automation—all designed specifically for the needs of our business.
+    </p>
+    <p>
+        Outside of work, I’m into hands-on hobbies like raising chickens, beekeeping, DIY projects, and amateur astronomy. I also enjoy playing basketball and pickleball, learning guitar, gaming, and hanging out with my wife.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="project">
+        <strong>Custom HRIS Solution</strong>
+        <p>
+          I designed and implemented a fully custom HRIS tailored to our entertainment center’s operations—without relying on expensive off-the-shelf software. The system uses Google Forms and Sheets as a flexible backend for applicant tracking, with AppSheet providing a user-friendly interface for managers to view employee personnel files, keep notes, record training, and store files.
+        </p>
+        <ul>
+          <li><strong>Two-way SMS communication</strong> powered by Twilio for applicant outreach and confirmations</li>
+          <li><strong>Automated job offer emails</strong> via Postmark</li>
+          <li><strong>Digital document signing</strong> using SignWell</li>
+          <li><strong>Square POS integration</strong> to automatically create employee accounts for scheduling and time tracking</li>
+        </ul>
+        <p>
+          This solution eliminated manual tracking, streamlined hiring, and cut down onboarding time dramatically—while keeping costs near zero and giving us full control over the process.
+        </p>
+      <img src="appsheet.jpg" alt="Employee HRIS Screenshot">
+    </div>
+    <div class="project">
+        <strong>Fuchsia – Custom Reservation & Scheduling System</strong>
+        <p>Fuchsia is a fully custom reservation system I built to streamline party and event bookings across our entertainment center. Built with Laravel and Filament, it handles the complexities of multiple rooms, booking durations, and overlapping schedules with precision and flexibility.</p>
+        <ul>
+          <li><strong>Smart time slot logic</strong> that maximizes bookings and avoids dead space between parties</li>
+          <li><strong>Real-time availability checking</strong> across rooms and time ranges</li>
+          <li><strong>Custom booking rules</strong> for duration, deposit, and pricing logic</li>
+          <li><strong>Automated confirmation emails and texts</strong> via Postmark and Twilio</li>
+          <li><strong>Front-desk-ready UI</strong> optimized for speed and tablet use</li>
+        </ul>
+      <img src="fuchsia.png" alt="Custom Reservation System Screenshot">
+    </div>
+    <div class="project">
+        <strong>Customer Websites – Classic Fun Center & Waterslides</strong>
+        <p>
+          I designed and built two customer-facing websites for our entertainment properties: Classic Fun Center and Classic Waterslides. These sites act as the digital front doors for our business, giving guests the ability to view hours, pricing, activities, FAQs, and contact information, as well as book parties and purchase season passes.
+        </p>
+        <ul>
+          <li><strong>Integrated with Fuchsia</strong> for real-time party bookings and availability</li>
+          <li><strong>Season Pass purchasing</strong> feeds directly into the employee backend system</li>
+          <li><strong>Square integration</strong> handles secure online payments for bookings and passes</li>
+          <li><strong>Mobile-first design</strong> for a smooth experience across all devices</li>
+        </ul>
+        <img src="website.png" alt="Classic Fun Center Website Screenshot">
+    </div>
+    <div class="project">
+        <strong>Season Pass Management System</strong>
+        <p>
+          I developed a lightweight, modern season pass management tool to replace an outdated legacy system that was inefficient and error-prone. The new system streamlines both the <strong>customer-facing purchase experience</strong> and the <strong>staff-side management process</strong>, using modern web technologies to eliminate bottlenecks.
+        </p>
+        <ul>
+          <li><strong>In-browser photo capture</strong> using HTML5 webcam access—no external software needed</li>
+          <li><strong>Online form integration</strong> so customers enter their own info at the time of purchase</li>
+          <li><strong>Instant pass activation</strong>, eliminating the old voucher redemption process</li>
+          <li><strong>Streamlined interface</strong> for rapid member lookup and check-in</li>
+          <li><strong>Daily visit tracking</strong> and staff-accessible check-in history</li>
+          <li><strong>Front-desk-ready workflow</strong> optimized for speed and simplicity</li>
+        </ul>
+      </div>
+      <div class="project">
+        <span style="display:inline-block; background:#ff5c5c; color:#fff; font-size:0.75rem; font-weight:bold; padding:4px 8px; border-radius:6px; margin-bottom:6px;">
+            Retired
+          </span>
+        <strong>Online Food Ordering System (COVID Response)</strong>
+        <p>
+          In response to COVID-19 and the need to reduce crowding at our snack bar, I built a mobile-friendly online ordering system over a single weekend using WordPress. The goal: eliminate lines, streamline food prep, and improve customer confidence in our health protocols.
+        </p>
+        <ul>
+          <li><strong>Mobile ordering and payments</strong> directly from the customer’s phone—no app or contact needed</li>
+          <li><strong>Thermal receipt printing</strong> with an automated ticket station at the snack bar</li>
+          <li><strong>Audible alerts</strong> using a desktop speaker to notify staff of incoming orders</li>
+          <li><strong>Twilio-powered SMS updates</strong> to notify guests when their order is ready</li>
+          <li><strong>Zero-contact workflow</strong> that reduced congestion and sped up service</li>
+        </ul>
+      </div>
+      <div class="project">
+        <span style="display:inline-block; background:#ff5c5c; color:#fff; font-size:0.75rem; font-weight:bold; padding:4px 8px; border-radius:6px; margin-bottom:6px;">
+            Retired / Replaced
+          </span>
+        <strong>Legacy Time Clock System → Square Clock Monitor</strong>
+        <p>
+          My first custom system for Classic was a homegrown time clock tool designed to streamline payroll processing. Before we adopted Square's built-in time tracking, my solution saved hours each pay period by digitizing clock-ins and exports. While it's since been deprecated, it laid the groundwork for how we manage employee time today.
+        </p>
+        <p>
+          As we transitioned to Square, I extended their functionality by building a <strong>real-time clock-in monitor</strong> for managers. Square lacked a quick way to see who was currently clocked in, so I created a live dashboard that runs on a monitor in the office.
+        </p>
+        <ul>
+          <li><strong>Pulls live clock-in data</strong> from Square</li>
+          <li><strong>Updates only when triggered by webhooks</strong> to reduce API usage</li>
+          <li><strong>Instant visibility for shift managers</strong> without needing to log in</li>
+        </ul>
+      </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:andrew@starks.me">andrew@starks.me</a><br>
+      <a href="https://github.com/starkskrats" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/andrew-starks-ab3869360/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+</body>
+</html>
